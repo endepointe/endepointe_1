@@ -1,0 +1,44 @@
+@media (min-width: 280px) {
+  .container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main > h1 {
+    opacity: 1;
+    transition: 0.7s opacity;
+  }
+
+  .fade {
+    opacity: 0;
+    transition: none;
+  }
+
+  .tx {
+    width: 20px;
+    height: 40px;
+    background-color: black;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* 
+Steps to creating a fade-in effect:
+
+1) add a fade class to the css file
+
+2) add an event the removes this class when the document loads.
+
+3) k
+*/
